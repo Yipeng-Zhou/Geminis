@@ -1,0 +1,19 @@
+obstacle_range: 5.0
+raytrace_range: 5.0
+# footprint: [[x0, y0], [x1, y1], ... [xn, yn]]
+robot_radius: 0.3
+inflation_radius: 0.5
+
+observation_sources: point_cloud_sensor
+
+# laser_scan_sensor: {sensor_frame: frame_name, data_type: LaserScan, topic: topic_name, marking: true, clearing: true}
+
+point_cloud_sensor: {sensor_frame: Quadrotor_2, data_type: PointCloud2, topic: /Quadrotor_2/points, marking: true, clearing: true, min_obstacle_height: 1.0}
+
+static_layer:
+  map_topic: /projected_map
+  track_unknown_space: true
+
+# plugins:
+#   - {name: obstacles,        type: "costmap_2d::ObstacleLayer"}
+#   - {name: inflation,        type: "costmap_2d::InflationLayer"}

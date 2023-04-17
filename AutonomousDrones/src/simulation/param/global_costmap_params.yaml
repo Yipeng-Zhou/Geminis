@@ -1,0 +1,24 @@
+global_costmap:
+  global_frame: world
+  robot_base_frame: Quadrotor_1_base
+  update_frequency: 1.0
+  publish_frequency: 2.0
+  always_send_full_costmap: true
+  transform_tolerance: 10.0
+  static_map: true
+
+  # plugins: 
+  #   - {name: static_layer1, type: "costmap_2d::StaticLayer"}
+  #   - {name: static_layer2, type: "costmap_2d::StaticLayer"}
+  #   - {name: obstacles,     type: "costmap_2d::ObstacleLayer"}
+  #   - {name: inflation,     type: "costmap_2d::InflationLayer"}
+
+  # static_layer1:
+  #   map_topic: /Quadrotor_1/projected_map
+  #   # use_maximum: true
+  #   # track_unknown_space: true
+
+  # static_layer2:
+  #   map_topic: /Quadrotor_2/projected_map
+  #   use_maximum: true
+  #   # track_unknown_space: true

@@ -1,0 +1,9 @@
+<launch>
+  <group ns="Quadrotor_1">
+    <node pkg="simulation" type="unity_ros" name="unity_ros" output="screen" />
+  </group>
+  
+  <group ns="Quadrotor_2">
+    <node pkg="simulation" type="unity_ros_2" name="unity_ros" output="screen" />
+  </group>
+</launch>
